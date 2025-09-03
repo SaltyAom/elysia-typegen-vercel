@@ -1,5 +1,6 @@
 {
 	"name": "elysia-typegen-example",
+	"module": "index.js",
 	"type": "module",
 	"version": "1.0.50",
 	"scripts": {
