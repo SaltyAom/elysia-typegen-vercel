@@ -5,11 +5,6 @@ import { fromTypes } from '@elysiajs/openapi/gen'
 // import User from './modules/user'
 
 export default new Elysia()
-	.get('/', redirect('/openapi'), {
-		detail: {
-			hide: true
-		}
-	})
 	.use(
 		openapi({
 			references: fromTypes('api/index.ts')
