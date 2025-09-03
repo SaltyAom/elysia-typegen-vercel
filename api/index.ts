@@ -2,7 +2,7 @@ import { Elysia, redirect } from 'elysia'
 import { openapi } from '@elysiajs/openapi'
 import { fromTypes } from '@elysiajs/openapi/gen'
 
-import { User } from './modules/user'
+import User from './modules/user'
 
 export default new Elysia()
 	.get('/', redirect('/openapi'), {

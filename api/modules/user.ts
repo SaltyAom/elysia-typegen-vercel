@@ -135,4 +135,4 @@ const userIdNoteId = new Elysia({
 			.returning()
 	)
 
-export const User = new Elysia().use([user, userId, userIdNote, userIdNoteId])
+export default new Elysia().use([user, userId, userIdNote, userIdNoteId])
