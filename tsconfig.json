@@ -12,7 +12,6 @@
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
-    "outDir": "api",
     "declaration": true,
     "emitDeclarationOnly": true,
 
@@ -28,7 +27,8 @@
     "noUnusedParameters": false,
     "noPropertyAccessFromIndexSignature": false,
 
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "outDir": "./dist/api",
   },
-  "exclude": ["drizzle.config.ts", "api/**/*"]
+  "exclude": ["drizzle.config.ts", "dist"]
 }
