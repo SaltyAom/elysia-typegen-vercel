@@ -7,7 +7,11 @@ import { User } from './modules/user'
 export default new Elysia()
 	.use(
 		openapi({
-			references: fromTypes('api/index.ts')
+			references: fromTypes(
+				process.env.NODE_ENV === 'production'
+					? 'api/index.d.ts'
+					: 'api/index.ts'
+			)
 		})
 	)
 	.use(User)
