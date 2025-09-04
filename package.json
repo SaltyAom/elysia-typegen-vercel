@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "bun run --watch api/index.ts",
-		"build": "rm -rf api && bun build src/index.ts --target node --format esm --outfile api/index.js && tsc"
+		"build": "rm -rf api && bun build src/index.ts --target node --format esm --outfile src/api/index.js && tsc"
 	},
 	"dependencies": {
 		"@elysiajs/openapi": "1.3.7",
