@@ -28,7 +28,7 @@
     "noPropertyAccessFromIndexSignature": false,
 
     "rootDir": "./src",
-    "outDir": "./dist/api",
+    "outDir": "./api",
   },
-  "exclude": ["drizzle.config.ts", "dist"]
+  "exclude": ["drizzle.config.ts", "dist", "api"]
 }
