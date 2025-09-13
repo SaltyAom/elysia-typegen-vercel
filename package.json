@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "bun run --watch src/index.ts",
-		"build": "rm -rf api && bun build src/index.ts --target node --format esm --outfile src/api/index.js && tsc"
+		"build": "tsdown src/index.ts -d api --dts"
 	},
 	"dependencies": {
 		"@elysiajs/openapi": "^1.4.2",
@@ -19,6 +19,7 @@
 	"devDependencies": {
 		"@types/bun": "^1.2.21",
 		"drizzle-kit": "^0.31.4",
+		"tsdown": "^0.15.1",
 		"typescript": "^5.9.2"
 	}
 }
